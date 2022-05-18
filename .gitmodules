@@ -1,0 +1,3 @@
+[submodule "vscode/luarequire_plugin"]
+	path = vscode/luarequire_plugin
+	url = git@github.com:lin3348/luarequire_plugin.git
