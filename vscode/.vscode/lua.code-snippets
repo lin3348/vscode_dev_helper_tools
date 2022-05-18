@@ -1,0 +1,34 @@
+{
+    "uirequire": {
+        "luaclass": {
+            "prefix": "luaclass",
+            "body": [
+                "---@class ${1:LuaClass}\r",
+                "local ${1:LuaClass} = class(\"${1:LuaClass}\")\r",
+                            "\r",
+                "function ${1:LuaClass}:ctor()\r",
+                "    ${2:--ctor}\r",
+                "end\r",
+                "\r",
+                "return ${1:LuaClass}"
+            ],
+            "description": "luaclass"
+        },
+        "funct": {
+            "prefix": "funct",
+            "body": [
+                "function $TM_FILENAME_BASE:${2:FuncName}($3)\r",
+                "    ${4:--body}\r",
+                "end",
+                "$0"
+            ],
+            "description": "funct"
+        },
+        
+        "andor": {
+            "prefix": "andor",
+            "body": ["${1:var1} and ${2:var2} or ${3:var3}"],
+            "description": "andor"
+        }
+    }   
+}

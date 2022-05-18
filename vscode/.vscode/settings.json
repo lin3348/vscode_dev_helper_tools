@@ -1,0 +1,16 @@
+{
+    // sinppet 配置
+    "editor.snippetSuggestions": "bottom",
+
+    // 使用系统剪贴板，方便ctrl+c ctrl+v
+    "vim.useSystemClipboard": true,
+    // vim禁用ctrl+c，避免与系统的ctrl+c冲突
+    "vim.handleKeys":{ "<C-c>": false },
+    // 通过jj或者Esc代替vim的ctrl+c
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}

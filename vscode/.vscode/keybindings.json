@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaults
+// vim 快捷键配置，拷贝到快捷键 File -> Perferences -> Keyboard Shortcut
+[
+    {
+        // 开关vim快捷键
+        "key": "alt+d",
+        "command": "toggleVim",
+        "when": "editorFocus"
+    },
+    {
+        // virtual模式快捷键替换为ctrl+q，避免与系统剪贴板快捷键冲突
+        "key": "ctrl+q",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+    },
+    {
+        // 采用系统剪贴板
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        // vim的快剪辑ctrl+f修改为vscode的查找
+        "key": "ctrl+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    }
+]
